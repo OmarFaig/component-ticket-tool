@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ResponsiveAppBar from './components/Navbar'
+import Footer from './components/Footer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -11,6 +12,7 @@ function App() {
     <>
     <ResponsiveAppBar />
     <p>Hello World</p>
+    <Footer />
     </>
   )
 }

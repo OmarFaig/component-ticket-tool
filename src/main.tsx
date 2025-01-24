@@ -6,7 +6,6 @@ import ResponsiveAppBar from './components/Navbar'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
-    
+    <App />   
   </StrictMode>,
 )
