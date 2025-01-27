@@ -8,6 +8,19 @@
   </head>
   <body>
     <div id="root"></div>
+    <div id="main-page-text">
+      This is a tool for managing the hardware and software components of the different
+      projects in a company. There is a PostgreSQL database where all the components are stored
+      with all the necessary information about them. The access to the database is 
+      restricted to the project managers and the system administrators. The main benefit of this restriction
+      is that the names of the components can not be changed arbitrarily and hence a more structured workflow can be guaranteed.
+      <br />
+      <br />
+      
+      In this tool users can request components in  bulk , i.e. 20 or more requests can be 
+      made at any given time. The requests are then processed by the system and the components are
+      created in the Jira. 
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -5,13 +5,15 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ResponsiveAppBar from './components/Navbar'
 import Footer from './components/Footer'
+import ExampleHandsontable from './pages/createTikckets'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
     <ResponsiveAppBar />
-    <p>Hello World</p>
+    <ExampleHandsontable/>
     <Footer />
     </>
   )
