@@ -2,9 +2,10 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  width: 100%;
 }
-
+#root{
+  width:100%;
+}
 /*.app-container {
   display: flex;
   flex-direction: column;
@@ -20,6 +21,9 @@ html, body {
   width: 100%;
   max-width: 100%;
   overflow-x: auto;
+  position:absolute;
+  top: 100px;
+  left: 10px;
 }
 
 

@@ -13,7 +13,6 @@ import CreateComponentRequest from "./pages/createTickets";
 function App() {
   return (
     <Router>
-      <div className="app-container">
         <ResponsiveAppBar />
         <main className="content">
           <Routes>
@@ -22,7 +21,6 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </div>
     </Router>
   );
 }
