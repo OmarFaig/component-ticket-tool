@@ -6,20 +6,19 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ResponsiveAppBar from './components/Navbar'
 import Footer from './components/Footer'
-import ExampleHandsontable from './pages/createTickets'
 import HomePage from "./pages/HomePage";
-import CreateComponentRequest from "./pages/createTickets";
+import CreateComponentRequest from "./pages/CreateTickets";
+import DataBaseInput from './pages/DatabaseInput'
 //import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <Router>
         <ResponsiveAppBar />
-        <main className="content">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/create-component-request" element={<CreateComponentRequest />} />
+            <Route path="/database-input" element={<DataBaseInput />} />
           </Routes>
-        </main>
         <Footer />
     </Router>
   );

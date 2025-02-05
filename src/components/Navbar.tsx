@@ -11,8 +11,9 @@ function ResponsiveAppbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-            <Nav.Link as={Link} to="/create-component-request">Create Component Request</Nav.Link>
-            <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
+        <Nav.Link as={Link} to="/create-component-request">Create Component Request</Nav.Link>
+        <Nav.Link as={Link} to="/database-input">Database-input</Nav.Link>
+        <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
           </Nav>
             </Navbar.Collapse>
           

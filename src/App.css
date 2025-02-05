@@ -6,26 +6,14 @@ html, body {
 #root{
   width:100%;
 }
-/*.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-  */
 
-.content {
-  flex-grow: 1; /* Pushes footer to the bottom */
-}
-.handsontable-container {
-  min-width: 600px;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: auto;
-  position:absolute;
-  top: 100px;
-  left: 10px;
-}
-
+.spreadsheet-container{
+    position:absolute;
+    top: 100px;
+    left: 10px;
+    width: 100%;
+    height: calc(100vh -50px);
+  }
 
 footer {
   background-color: blueviolet;
