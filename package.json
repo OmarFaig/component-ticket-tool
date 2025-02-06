@@ -1,8 +1,9 @@
 {
   "name": "component-ticket-tool",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "proxy": "http://localhost:3001",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -18,7 +19,12 @@
     "@mui/material": "^6.4.1",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "handsontable": "^15.0.0",
+    "jspreadsheet": "^11.16.2",
+    "pg": "^8.13.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.8",
     "react-dom": "^18.3.1",
