@@ -28,9 +28,18 @@ app.post('/api/save-data', async (req, res) => {
     try {
         const client = await pool.connect();
         for (const row of data) {
+            console.log("Current row:", row);
+            console.log("Row length:", row.length);
+            
+            // Validate row length
+            if (row.length !== 4) {
+                console.error(`Invalid row length: ${row.length}, expected 4`);
+                continue; // Skip invalid rows
+            }
+
             await client.query(
-'INSERT INTO "Components" ("ProjectName", "ComponentType", "ComponentName", "ComponentDescription") VALUES ($1, $2, $3, $4)',
-                       row
+                'INSERT INTO "Components" ("ProjectName", "ComponentType", "ComponentName", "ComponentDescription") VALUES ($1, $2, $3, $4)',
+                row
             );
         }
         client.release();
